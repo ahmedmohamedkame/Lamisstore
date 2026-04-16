@@ -35,7 +35,13 @@ export default function App() {
   const [adminForm, setAdminForm] = useState({ username: "admin", password: "1234" });
   const [newProduct, setNewProduct] = useState({ title: "", category: "قصص", price: "", stock: "", image: "📘", description: "" });
   const [editingId, setEditingId] = useState(null);
+const [checkoutForm, setCheckoutForm] = useState({
+  name: "",
+  phone: "",
+  address: "",
+});
 
+const whatsappNumber = "201092444003";
   const filteredProducts = useMemo(() => {
     return products.filter((product) => {
       const matchesCategory = selectedCategory === "الكل" || product.category === selectedCategory;
@@ -126,7 +132,28 @@ export default function App() {
   function updateOrderStatus(orderId, status) {
     setOrders((prev) => prev.map((order) => order.id === orderId ? { ...order, status } : order));
   }
+function generateWhatsAppLink() {
+  if (!checkoutForm.name || !checkoutForm.phone || !checkoutForm.address || cartItems.length === 0) {
+    return "#";
+  }
 
+  const itemsText = cartItems
+    .map((item, index) => `${index + 1}- ${item.title} × ${item.quantity} = ${formatPrice(item.price * item.quantity)}`)
+    .join("\n");
+
+  const message = `طلب جديد من لميس ستور
+
+الاسم: ${checkoutForm.name}
+رقم الهاتف: ${checkoutForm.phone}
+العنوان: ${checkoutForm.address}
+
+المنتجات:
+${itemsText}
+
+الإجمالي: ${formatPrice(cartTotal)}`;
+
+  return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+}
   function StatCard({ icon, label, value }) {
     return (
       <div className="card stat-card">
