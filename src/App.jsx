@@ -298,7 +298,6 @@ ${itemsText}
     <div className="page store-page" dir="rtl">
       <header className="topbar">
         <div>
-import logo from "./logo.png";
           <p className="muted small">متجر متكامل لبيع الكتب المدرسية وكل الادوات المدرسية وقصص الأطفال أونلاين</p>
         </div>
 
