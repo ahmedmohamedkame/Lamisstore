@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { ShoppingCart, Heart, Search, BookOpen, UserCircle2, Trash2, Plus, Minus, LayoutDashboard, Package, ClipboardList, Settings, LogOut, Edit, X } from "lucide-react";
-
+import logo from "./logo.png";
 const initialProducts = [
   { id: 1, title: "قصص الأطفال المصورة", category: "قصص", price: 75, stock: 12, image: "📚", description: "مجموعة قصص ممتعة ومناسبة للأطفال لتنمية الخيال وحب القراءة.", featured: true },
   { id: 2, title: "حروف وأرقام", category: "تعليمي", price: 60, stock: 9, image: "🔤", description: "كتاب مبسط لتعليم الحروف العربية والأرقام بطريقة جذابة.", featured: true },
@@ -298,8 +298,10 @@ ${itemsText}
     <div className="page store-page" dir="rtl">
       <header className="topbar">
         <div>
-          <h1 className="brand">لميس ستور</h1>
-          <p className="muted small">متجر متكامل لبيع الكتب المدرسية وكل الادولا المدرسية وقصص الأطفال أونلاين</p>
+<div className="logo">
+  <img src={logo} alt="logo" />
+  <h1>Lamis Store</h1>
+</div>          <p className="muted small">متجر متكامل لبيع الكتب المدرسية وكل الادوات المدرسية وقصص الأطفال أونلاين</p>
         </div>
 
         <div className="search-box desktop-only">
