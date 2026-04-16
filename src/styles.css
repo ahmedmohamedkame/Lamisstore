@@ -195,6 +195,9 @@ button,input,select,textarea{font:inherit}
   display:block;
 }
 .brand-text{
-  display:inline-block;
-  margin-top: 10px;
+  display:block;
+  margin-top: 8px;
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--brand);
 }
