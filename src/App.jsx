@@ -298,10 +298,8 @@ ${itemsText}
     <div className="page store-page" dir="rtl">
       <header className="topbar">
         <div>
-<div className="logo">
-  <img src={logo} alt="logo" />
-  <h1>Lamis Store</h1>
-</div>          <p className="muted small">متجر متكامل لبيع الكتب المدرسية وكل الادوات المدرسية وقصص الأطفال أونلاين</p>
+<h1 className="brand">لميس ستور</h1>   
+          <p className="muted small">متجر متكامل لبيع الكتب المدرسية وكل الادوات المدرسية وقصص الأطفال أونلاين</p>
         </div>
 
         <div className="search-box desktop-only">
