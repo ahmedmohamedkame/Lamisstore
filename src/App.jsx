@@ -439,10 +439,47 @@ ${itemsText}
                 ))}
 
                 <div className="summary">
-                  <div className="row between bold"><span>الإجمالي</span><span>{formatPrice(cartTotal)}</span></div>
-                  <button className="btn btn-primary full">إتمام الطلب</button>
-                  <button className="btn btn-light full">متابعة التسوق</button>
-                </div>
+  <div className="row between bold">
+    <span>الإجمالي</span>
+    <span>{formatPrice(cartTotal)}</span>
+  </div>
+
+  <div className="stack top-gap">
+    <input
+      className="input"
+      placeholder="الاسم الكامل"
+      value={checkoutForm.name}
+      onChange={(e) => setCheckoutForm({ ...checkoutForm, name: e.target.value })}
+    />
+
+    <input
+      className="input"
+      placeholder="رقم الهاتف"
+      value={checkoutForm.phone}
+      onChange={(e) => setCheckoutForm({ ...checkoutForm, phone: e.target.value })}
+    />
+
+    <textarea
+      className="input textarea"
+      placeholder="العنوان بالتفصيل"
+      value={checkoutForm.address}
+      onChange={(e) => setCheckoutForm({ ...checkoutForm, address: e.target.value })}
+    />
+  </div>
+
+  <a
+    href={generateWhatsAppLink()}
+    target="_blank"
+    rel="noreferrer"
+    className="btn btn-primary full"
+  >
+    اطلب على واتساب
+  </a>
+
+  <button onClick={() => setShowCart(false)} className="btn btn-light full">
+    متابعة التسوق
+  </button>
+</div>
               </div>
             )}
           </div>
