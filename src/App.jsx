@@ -299,7 +299,7 @@ ${itemsText}
       </div>
     );
   }
-
+<h1 className="brand" style={{display:"block"}}>لميس ستور</h1>
   return (
     <div className="page store-page" dir="rtl">
       <header className="topbar">
