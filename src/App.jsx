@@ -299,14 +299,14 @@ ${itemsText}
       </div>
     );
   }
-<h1 className="brand" style={{display:"block"}}>لميس ستور</h1>
   return (
-    <div className="page store-page" dir="rtl">
-      <header className="topbar">
-        <div>
-          <p className="muted small">متجر متكامل لبيع الكتب المدرسية وكل الادوات المدرسية وقصص الأطفال أونلاين</p>
-        </div>
-
+    <div className="brand-wrap">
+  <img src={logo} alt="Lamis Store logo" className="site-logo" />
+  <div>
+    <h1 className="brand">لميس ستور</h1>
+    <p className="muted small">متجر متكامل لبيع الكتب المدرسية وكل الأدوات المكتبية وقصص الأطفال أونلاين</p>
+  </div>
+</div>
         <div className="search-box desktop-only">
           <Search className="search-icon" size={18} />
           <input value={search} onChange={(e) => setSearch(e.target.value)} className="search-input" placeholder="ابحثي عن كتاب أو قسم..." />
