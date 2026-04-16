@@ -298,7 +298,7 @@ ${itemsText}
     <div className="page store-page" dir="rtl">
       <header className="topbar">
         <div>
-<h1 className="brand">لميس ستور</h1>   
+import logo from "./logo.png";
           <p className="muted small">متجر متكامل لبيع الكتب المدرسية وكل الادوات المدرسية وقصص الأطفال أونلاين</p>
         </div>
 
