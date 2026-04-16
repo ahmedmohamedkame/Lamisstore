@@ -169,8 +169,14 @@ ${itemsText}
   if (mode === "admin") {
     return (
       <div className="page admin-page" dir="rtl">
-        <header className="topbar solid">
-          <div>
+<header className="topbar">
+  <div className="brand-wrap">
+    <img src={logo} alt="Lamis Store logo" className="site-logo" />
+    <div>
+      <h1 className="brand">لميس ستور</h1>
+      <p className="muted small">متجر متكامل لبيع الكتب المدرسية وكل الأدوات المكتبية وقصص الأطفال أونلاين</p>
+    </div>
+  </div>          <div>
             <h1 className="brand">لوحة تحكم لميس ستور</h1>
             <p className="muted small">إدارة المنتجات والطلبات والمكتبة</p>
           </div>
