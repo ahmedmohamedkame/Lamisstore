@@ -188,7 +188,7 @@ ${itemsText}
               <div className="center">
                 <div className="avatar-badge"><UserCircle2 className="brand-text" /></div>
                 <h2>دخول الأدمن</h2>
-                <p className="muted small">اسم المستخدم: admin - كلمة المرور: 1234</p>
+                <p className="muted small">اسم المستخدم: admin - كلمة المرور: 5806</p>
               </div>
               <form onSubmit={handleAdminLogin} className="stack">
                 <input value={adminForm.username} onChange={(e) => setAdminForm({ ...adminForm, username: e.target.value })} className="input" placeholder="اسم المستخدم" />
@@ -299,7 +299,7 @@ ${itemsText}
       <header className="topbar">
         <div>
           <h1 className="brand">لميس ستور</h1>
-          <p className="muted small">متجر متكامل لبيع كتب وقصص الأطفال أونلاين</p>
+          <p className="muted small">متجر متكامل لبيع الكتب المدرسية وكل الادولا المدرسية وقصص الأطفال أونلاين</p>
         </div>
 
         <div className="search-box desktop-only">
@@ -320,7 +320,7 @@ ${itemsText}
         <div>
           <span className="pill">مكتبة أونلاين كاملة</span>
           <h2 className="hero-title">خلي كتب الأطفال أقرب لكل بيت مع <span className="brand-text">لميس ستور</span></h2>
-          <p className="hero-text">متجر إلكتروني متكامل فيه عرض كتب، سلة شراء، مفضلة، بحث، ولوحة تحكم للأدمن لإدارة المنتجات والطلبات.</p>
+          <p className="hero-text">لميس ستور هو متجرك المتكامل للكتب والأدوات المكتبية لجميع المراحل، من الابتدائي حتى الجامعي. نوفر لك تجربة تسوق سهلة وسريعة تشمل تصفح المنتجات، البحث الذكي، سلة شراء متكاملة، ومفضلة، مع نظام إدارة احترافي للطلبات والمنتجات..</p>
           <div className="row gap wrap">
             <a href="#products" className="btn btn-primary">ابدئي التسوق</a>
             <button onClick={() => setMode("admin")} className="btn btn-light">لوحة التحكم</button>
