@@ -319,10 +319,10 @@ ${itemsText}
       <section className="hero container">
         <div>
           <span className="pill">مكتبة أونلاين كاملة</span>
-          <h2 className="hero-title">خلي كتب الأطفال أقرب لكل بيت مع <span className="brand-text">لميس ستور</span></h2>
+          <h2 className="hero-title">ابدأ نجاحك الدراسي من هنا <span className="brand-text">لميس ستور</span></h2>
           <p className="hero-text">لميس ستور هو متجرك المتكامل للكتب والأدوات المكتبية لجميع المراحل، من الابتدائي حتى الجامعي. نوفر لك تجربة تسوق سهلة وسريعة تشمل تصفح المنتجات، البحث الذكي، سلة شراء متكاملة، ومفضلة، مع نظام إدارة احترافي للطلبات والمنتجات..</p>
           <div className="row gap wrap">
-            <a href="#products" className="btn btn-primary">ابدئي التسوق</a>
+            <a href="#products" className="btn btn-primary">ابدء التسوق</a>
             <button onClick={() => setMode("admin")} className="btn btn-light">لوحة التحكم</button>
           </div>
         </div>
