@@ -81,9 +81,15 @@ const whatsappNumber = "201092444003";
 
   function handleAdminLogin(e) {
     e.preventDefault();
-    if (adminForm.username === "admin" && adminForm.password === "1234") setAdminLoggedIn(true);
-    else alert("بيانات الدخول غير صحيحة. جرب admin / 1234");
+ function handleAdminLogin(e) {
+  e.preventDefault();
+
+  if (adminForm.username === "admin" && adminForm.password === "5806") {
+    setAdminLoggedIn(true);
+  } else {
+    alert("اسم المستخدم أو كلمة المرور غير صحيحة");
   }
+}
 
   function resetProductForm() {
     setNewProduct({ title: "", category: "قصص", price: "", stock: "", image: "📘", description: "" });
