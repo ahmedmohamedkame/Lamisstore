@@ -32,7 +32,7 @@ export default function App() {
   const [selectedCategory, setSelectedCategory] = useState("الكل");
   const [showCart, setShowCart] = useState(false);
   const [adminLoggedIn, setAdminLoggedIn] = useState(false);
-  const [adminForm, setAdminForm] = useState({ username: "admin", password: "1234" });
+const [adminForm, setAdminForm] = useState({ username: "", password: "" });
   const [newProduct, setNewProduct] = useState({ title: "", category: "قصص", price: "", stock: "", image: "📘", description: "" });
   const [editingId, setEditingId] = useState(null);
 const [checkoutForm, setCheckoutForm] = useState({
