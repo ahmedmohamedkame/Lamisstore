@@ -212,7 +212,6 @@ ${itemsText}
               <StatCard icon={<ShoppingCart />} label="عناصر في السلة" value={cartCount} />
               <StatCard icon={<Heart />} label="المفضلة" value={favorites.length} />
             </div>
-
             <div className="grid admin-grid">
               <section className="card section">
                 <div className="section-title"><Settings className="brand-text" /> <h3>{editingId ? "تعديل كتاب" : "إضافة كتاب جديد"}</h3></div>
