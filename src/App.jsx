@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { ShoppingCart, Heart, Search, BookOpen, UserCircle2, Trash2, Plus, Minus, LayoutDashboard, Package, ClipboardList, Settings, LogOut, Edit, X } from "lucide-react";
 import logo from "./logo.png";
 const initialProducts = [
@@ -24,7 +24,16 @@ function formatPrice(price) {
 
 export default function App() {
   const [mode, setMode] = useState("store");
-  const [products, setProducts] = useState(initialProducts);
+const [products, setProducts] = useState(() => {
+  const saved = localStorage.getItem("lamis_products");
+  return saved ? JSON.parse(saved) : initialProducts;
+});
+  useEffect(() => {
+  localStorage.setItem("lamis_orders", JSON.stringify(orders));
+}, [orders]);
+  useEffect(() => {
+  localStorage.setItem("lamis_products", JSON.stringify(products));
+}, [products]);
   const [orders, setOrders] = useState(initialOrders);
   const [cart, setCart] = useState([]);
   const [favorites, setFavorites] = useState([]);
