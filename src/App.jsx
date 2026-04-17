@@ -197,9 +197,8 @@ ${itemsText}
               <div className="center">
                 <div className="avatar-badge"><UserCircle2 className="brand-text" /></div>
                 <h2>دخول الأدمن</h2>
-                <p className="muted small">اسم المستخدم: admin - كلمة المرور: 5806</p>
-              </div>
-              <form onSubmit={handleAdminLogin} className="stack">
+<p className="muted small">يرجى إدخال بيانات الدخول للوصول إلى لوحة التحكم</p>
+                <form onSubmit={handleAdminLogin} className="stack">
                 <input value={adminForm.username} onChange={(e) => setAdminForm({ ...adminForm, username: e.target.value })} className="input" placeholder="اسم المستخدم" />
                 <input type="password" value={adminForm.password} onChange={(e) => setAdminForm({ ...adminForm, password: e.target.value })} className="input" placeholder="كلمة المرور" />
                 <button className="btn btn-primary full">دخول</button>
