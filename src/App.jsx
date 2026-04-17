@@ -81,8 +81,7 @@ const whatsappNumber = "201092444003";
 function handleAdminLogin(e) {
   e.preventDefault();
 
-  if (adminForm.username === "admin" && adminForm.password === "5806") {
-    setAdminLoggedIn(true);
+<p className="muted small">يرجى إدخال بيانات الدخول</p>    setAdminLoggedIn(true);
   } else {
     alert("اسم المستخدم أو كلمة المرور غير صحيحة");
   }
