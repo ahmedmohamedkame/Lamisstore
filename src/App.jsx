@@ -78,7 +78,8 @@ const whatsappNumber = "201092444003";
   function toggleFavorite(productId) {
     setFavorites((prev) => prev.includes(productId) ? prev.filter((id) => id !== productId) : [...prev, productId]);
   }
-
+function handleAdminLogin(e) {
+  e.preventDefault();
 
   if (adminForm.username === "admin" && adminForm.password === "5806") {
     setAdminLoggedIn(true);
